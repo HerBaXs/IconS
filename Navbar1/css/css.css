@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container{
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.container h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container ul li {
+    list-style-type: none;
+    float: left;
+    box-sizing: border-box;
+    width: calc(100% / 8);
+}
+
+.container ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container ul li a .fa {
+    font-size: 40px;
+    transition: .5s;
+}
+
+.container ul li a:hover .fa {
+    transform: rotateY(360deg);
+}
+
+.container ul li:nth-child(1) a {
+    background-color: #1B1464;
+}
+.container ul li:nth-child(2) a {
+    background-color: #12CBC4;
+}
+.container ul li:nth-child(3) a {
+    background-color: #EA2027;
+}
+.container ul li:nth-child(4) a {
+    background-color: #0652DD;
+}
+.container ul li:nth-child(5) a {
+    background-color: #2d98da;
+}
+.container ul li:nth-child(6) a {
+    background-color: #eb3b5a;
+}
+.container ul li:nth-child(7) a {
+    background-color: #EA2027;
+}
+.container ul li:nth-child(8) a {
+    background-color: #ED4C67;
+}
+
+@media only screen and (max-width: 992px) {
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container ul li {
+        width: calc(100% / 4);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    .container ul li {
+        width: calc(100% / 2);
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    .container ul li {
+        width: calc(100% / 1);
+    }
+}
